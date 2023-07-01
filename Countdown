@@ -1,6 +1,7 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New year CountDown</title>
@@ -102,7 +103,7 @@
     </style>
   </head>
 
-  <body class="">
+  <body>
     <div id="timer">
         <div class="days">
           <div id="days" class="numbers"></div>
@@ -155,5 +156,5 @@
           document.getElementById("seconds").innerHTML = seconds;
       }
     }, 1000);
-  </script>
-  </html>
+</script>
+</html>
