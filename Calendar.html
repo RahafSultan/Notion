@@ -5,11 +5,12 @@
     <title> Calendar </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
    *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: "Segoe UI Emoji", "Segoe UI Symbol";
+   font-family: Source Code Pro', monospace;
    }
    body{
    display: flex;
@@ -20,16 +21,15 @@
    background: #ACC8A7;
    }
    .wrapper{
-   width: 450px;
+   width: 370px;
    background: #fff;
-   border-radius: 10px;
    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
    }
    .wrapper header{
    display: flex;
    align-items: center;
    padding: 25px 30px 10px;
-   justify-content: space-between;
+   justify-content: center;
    }
    header .icons{
    display: flex;
@@ -71,7 +71,7 @@
    .calendar li{
    color: #333;
    width: calc(100% / 7);
-   font-size: 1.07rem;
+   font-size: 0.9em;
    }
    .calendar .weeks li{
    font-weight: bold;
@@ -81,7 +81,7 @@
   z-index: 1;
   cursor: pointer;
   position: relative;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .days li.inactive{
   color: #aaa;
@@ -101,7 +101,7 @@
   transform: translate(-50%, -50%);
 }
 .days li.active::before{
-  background: #577053;
+  background: #4D7147;
 }
 .days li:not(.active):hover::before{
   background: #f2f2f2;
@@ -116,13 +116,13 @@
       </header>
       <div class="calendar">
         <ul class="weeks">
-          <li>Sun</li>
-          <li>Mon</li>
-          <li>Tue</li>
-          <li>Wed</li>
-          <li>Thu</li>
-          <li>Fri</li>
-          <li>Sat</li>
+          <li>S</li>
+          <li>M</li>
+          <li>T</li>
+          <li>W</li>
+          <li>T</li>
+          <li>F</li>
+          <li>S</li>
         </ul>
         <ul class="days"></ul>
       </div>
